@@ -4,6 +4,7 @@
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-i18n/
  */
 import { __ } from "@wordpress/i18n";
+import { useEffect } from "@wordpress/element";
 
 /**
  * React hook that is used to mark the block wrapper element.
@@ -23,8 +24,18 @@ import { PanelBody, TextControl, ToggleControl } from "@wordpress/components";
  * @return {Element} Element to render.
  */
 export default function Edit({ attributes, setAttributes }) {
-	const { showStartingYear, startingYear } = attributes;
+	const { fallbackCurrentYear, showStartingYear, startingYear } = attributes;
+
+	// Get the current year and make sure it's a string.
 	const currentYear = new Date().getFullYear().toString();
+
+	// When the block loads, set the fallbackCurrentYear attribute to the
+	// current year if it's not already set.
+	useEffect(() => {
+		if (currentYear !== fallbackCurrentYear) {
+			setAttributes({ fallbackCurrentYear: currentYear });
+		}
+	}, [currentYear, fallbackCurrentYear, setAttributes]);
 
 	let displayDate;
 

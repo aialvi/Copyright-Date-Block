@@ -10,15 +10,18 @@ import { useBlockProps } from "@wordpress/block-editor";
  */
 
 export default function save({ attributes }) {
-	const { showStartingYear, startingYear } = attributes;
-	const currentYear = new Date().getFullYear().toString();
+	const { fallbackCurrentYear, showStartingYear, startingYear } = attributes;
+
+	if (!fallbackCurrentYear) {
+		return null;
+	}
 
 	let displayDate;
 
 	if (showStartingYear && startingYear) {
-		displayDate = startingYear + "–" + currentYear;
+		displayDate = startingYear + "–" + fallbackCurrentYear;
 	} else {
-		displayDate = currentYear;
+		displayDate = fallbackCurrentYear;
 	}
 
 	return <p {...useBlockProps.save()}>© {displayDate}</p>;
