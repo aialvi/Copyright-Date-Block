@@ -1,5 +1,5 @@
 === Copyright Date Block ===
-Contributors:      The WordPress Contributors
+Contributors:      Aminul Islam Alvi
 Tags:              block
 Tested up to:      6.1
 Stable tag:        0.1.0
