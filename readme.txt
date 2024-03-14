@@ -1,55 +1,50 @@
 === Copyright Date Block ===
-Contributors:      Aminul Islam Alvi
-Tags:              block
-Tested up to:      6.1
-Stable tag:        0.1.0
-License:           GPL-2.0-or-later
-License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+Contributors: Aminul Islam Alvi  
+Tags: block  
+Tested up to: 6.1  
+Stable tag: 0.1.0  
+License: GPL-2.0-or-later  
+License URI: [https://www.gnu.org/licenses/gpl-2.0.html](https://www.gnu.org/licenses/gpl-2.0.html)
 
-Example block scaffolded with Create Block tool.
+This plugin adds a copyright date block to your WordPress website. You can easily display the current year in your footer or anywhere on your site using this block.
 
-== Description ==
+## Installation
 
-This is the long description. No limit, and you can use Markdown (as well as in the following sections).
+1. Upload the `copyright-date-block` directory to the `/wp-content/plugins/` directory.
+2. Navigate to the `copyright-date-block` directory in your terminal.
+3. Run `npm install` to install the necessary dependencies.
+4. Run `npm run build` to build the plugin assets.
+5. Activate the plugin through the 'Plugins' menu in WordPress.
 
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and
-Markdown parsed.
+## Usage
 
-== Installation ==
+1. After activating the plugin, you will find the "Copyright Date" block in the block editor.
+2. Simply add the block where you want to display the current year.
 
-This section describes how to install the plugin and get it working.
+## Frequently Asked Questions
 
-e.g.
+### How do I customize the copyright date?
 
-1. Upload the plugin files to the `/wp-content/plugins/copyright-date-block` directory, or install the plugin through the WordPress plugins screen directly.
-1. Activate the plugin through the 'Plugins' screen in WordPress
+The copyright date automatically updates to the current year, ensuring your copyright information is always accurate.
 
+## Changelog
 
-== Frequently Asked Questions ==
+### 0.1.0
+- Initial release.
 
-= A question that someone might have =
+## Upgrade Notice
 
-An answer to that question.
+### 0.1.0
+Initial release. No upgrade necessary.
 
-= What about foo bar? =
+## Support
 
-Answer to foo bar dilemma.
+For help and support, please [open an issue](https://github.com/aialvi/copyright-date-block/issues) on GitHub. 
 
-== Screenshots ==
+## Contribute
 
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
-directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
-(or jpg, jpeg, gif).
-2. This is the second screen shot
+You can contribute to the development of this plugin on [GitHub](https://github.com/aialvi/copyright-date-block). We welcome any contributions, feedback, or bug reports.
 
-== Changelog ==
+## License
 
-= 0.1.0 =
-* Release
-
-== Arbitrary section ==
-
-You may provide arbitrary sections, in the same format as the ones above. This may be of use for extremely complicated
-plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
-"installation." Arbitrary sections will be shown below the built-in sections outlined above.
+This plugin is licensed under the GPL-2.0-or-later license. See [LICENSE](LICENSE) for more information.
