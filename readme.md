@@ -1,4 +1,5 @@
-=== Copyright Date Block ===
+# Copyright Date Block
+
 Contributors: Aminul Islam Alvi  
 Tags: block  
 Tested up to: 6.1  
@@ -30,16 +31,18 @@ The copyright date automatically updates to the current year, ensuring your copy
 ## Changelog
 
 ### 0.1.0
+
 - Initial release.
 
 ## Upgrade Notice
 
 ### 0.1.0
+
 Initial release. No upgrade necessary.
 
 ## Support
 
-For help and support, please [open an issue](https://github.com/aialvi/copyright-date-block/issues) on GitHub. 
+For help and support, please [open an issue](https://github.com/aialvi/copyright-date-block/issues) on GitHub.
 
 ## Contribute
 
